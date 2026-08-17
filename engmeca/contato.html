@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Entre em contato com o projeto ENGMECA e envie dúvidas, sugestões ou novos recursos." />
+    <meta name="theme-color" content="#08111f" id="theme-color" />
+    <title>Contato | ENGMECA</title>
+    <link rel="icon" href="image/Engrenagem.png" type="image/png" />
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/include.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/contact.js" defer></script>
+  </head>
+
+  <body data-page="contact">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div data-include="partials/header.html"></div>
+
+    <main id="conteudo">
+      <header class="page-hero page-hero-contact">
+        <div class="container page-hero-content">
+          <nav class="breadcrumb" aria-label="Navegação estrutural"><a href="index.html">Início</a><span aria-hidden="true">/</span><span>Contato</span></nav>
+          <p class="eyebrow">Fale com o projeto</p>
+          <h1>Dúvidas e sugestões são bem-vindas.</h1>
+          <p>Envie uma mensagem para sugerir recursos, informar um problema ou conversar sobre a ENGMECA.</p>
+        </div>
+      </header>
+
+      <section class="section" aria-labelledby="contact-title">
+        <div class="container contact-layout">
+          <div class="contact-copy">
+            <p class="eyebrow">Contato</p>
+            <h2 id="contact-title">Vamos conversar?</h2>
+            <p>Preencha o formulário. Ao enviar, seu aplicativo de e-mail será aberto com a mensagem pronta.</p>
+            <div class="contact-details">
+              <a href="mailto:contato@engmeca.com"><span aria-hidden="true">@</span><div><small>E-mail</small><strong>contato@engmeca.com</strong></div></a>
+              <div><span aria-hidden="true">⌖</span><div><small>Localização</small><strong>Pará, Brasil</strong></div></div>
+              <div><span aria-hidden="true">i</span><div><small>Contexto</small><strong>Projeto Integrador</strong></div></div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-grid">
+              <div class="form-field"><label for="name">Nome <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" minlength="2" required /></div>
+              <div class="form-field"><label for="email">E-mail <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+            </div>
+            <div class="form-field"><label for="subject">Assunto <span aria-hidden="true">*</span></label><select id="subject" name="subject" required><option value="">Selecione um assunto</option><option value="Sugestão de recurso">Sugestão de recurso</option><option value="Problema no site">Problema no site</option><option value="Dúvida sobre o projeto">Dúvida sobre o projeto</option><option value="Outro assunto">Outro assunto</option></select></div>
+            <div class="form-field"><div class="label-row"><label for="message">Mensagem <span aria-hidden="true">*</span></label><span id="character-count">0/600</span></div><textarea id="message" name="message" rows="7" minlength="10" maxlength="600" required></textarea></div>
+            <p class="form-note">Os dados ficam no seu dispositivo e são enviados somente pelo seu aplicativo de e-mail.</p>
+            <button class="button button-primary contact-submit" type="submit">Preparar mensagem</button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="faq-title">
+        <div class="container faq-layout">
+          <div class="section-heading"><p class="eyebrow">Dúvidas frequentes</p><h2 id="faq-title">Antes de enviar</h2></div>
+          <div class="faq-list">
+            <details><summary>Os materiais da ENGMECA são gratuitos?</summary><p>A ENGMECA prioriza materiais abertos. Cada plataforma externa pode possuir seus próprios termos e formas de acesso.</p></details>
+            <details><summary>Posso sugerir um curso ou ferramenta?</summary><p>Sim. Selecione “Sugestão de recurso” no formulário e inclua o nome e o endereço da página.</p></details>
+            <details><summary>O formulário armazena meus dados?</summary><p>Não. A mensagem é preparada localmente e aberta no aplicativo de e-mail configurado no seu dispositivo.</p></details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+  </body>
+</html>

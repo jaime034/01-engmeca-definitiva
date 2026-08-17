@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Biblioteca ENGMECA com cursos, referências, modelos CAD e materiais de Engenharia Mecânica."
+    />
+    <meta name="theme-color" content="#08111f" id="theme-color" />
+    <title>Recursos | ENGMECA</title>
+    <link rel="icon" href="image/Engrenagem.png" type="image/png" />
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/include.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/search.js" defer></script>
+  </head>
+
+  <body data-page="resources">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div data-include="partials/header.html"></div>
+
+    <main id="conteudo">
+      <header class="page-hero">
+        <div class="container page-hero-content">
+          <nav class="breadcrumb" aria-label="Navegação estrutural">
+            <a href="index.html">Início</a><span aria-hidden="true">/</span><span>Recursos</span>
+          </nav>
+          <p class="eyebrow">Biblioteca técnica</p>
+          <h1>Conhecimento confiável, organizado em um só lugar.</h1>
+          <p>Pesquise por tema ou filtre a biblioteca para encontrar o conteúdo mais útil para seu momento de estudo.</p>
+        </div>
+      </header>
+
+      <section class="section resources-page" aria-labelledby="library-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Curadoria ENGMECA</p>
+            <h2 id="library-title">Explore a biblioteca</h2>
+          </div>
+
+          <div class="search-panel" role="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+            <label class="sr-only" for="search-input">Pesquisar recursos</label>
+            <input type="search" id="search-input" placeholder="Ex.: CAD, projeto mecânico, física..." autocomplete="off" />
+            <button class="search-clear" id="search-clear" type="button" hidden>Limpar</button>
+          </div>
+
+          <div class="filter-row" aria-label="Filtrar recursos por categoria">
+            <button type="button" data-filter="all" aria-pressed="true">Todos</button>
+            <button type="button" data-filter="course" aria-pressed="false">Cursos</button>
+            <button type="button" data-filter="project" aria-pressed="false">Projeto</button>
+            <button type="button" data-filter="cad" aria-pressed="false">CAD</button>
+            <button type="button" data-filter="reference" aria-pressed="false">Referências</button>
+          </div>
+
+          <p class="search-status" id="search-status" aria-live="polite">6 recursos encontrados</p>
+
+          <div class="resource-grid" id="resource-grid">
+            <article class="resource-card searchable-card" data-category="course" data-search="máquinas projeto mecânico fundamentos mit curso mecanismos">
+              <div class="resource-topline"><span class="resource-icon" aria-hidden="true">01</span><span class="tag">Curso</span></div>
+              <h3>Como e por que máquinas funcionam</h3>
+              <p>Fundamentos de máquinas, desenho, CAD e desenvolvimento de projetos com abordagem prática.</p>
+              <div class="resource-meta"><span>MIT OpenCourseWare</span><span>Inglês</span></div>
+              <a class="card-link" href="https://ocw.mit.edu/courses/2-000-how-and-why-machines-work-spring-2002/" target="_blank" rel="noopener noreferrer">Acessar recurso <span aria-hidden="true">↗</span><span class="sr-only">(abre em nova aba)</span></a>
+            </article>
+
+            <article class="resource-card searchable-card" data-category="project" data-search="elementos máquinas rolamentos engrenagens molas projeto mecânico mit">
+              <div class="resource-topline"><span class="resource-icon" aria-hidden="true">02</span><span class="tag">Projeto</span></div>
+              <h3>Elementos de projeto mecânico</h3>
+              <p>Modelagem e análise de rolamentos, engrenagens, molas, cames e mecanismos reais.</p>
+              <div class="resource-meta"><span>MIT OpenCourseWare</span><span>Avançado</span></div>
+              <a class="card-link" href="https://ocw.mit.edu/courses/2-72-elements-of-mechanical-design-spring-2009/" target="_blank" rel="noopener noreferrer">Acessar recurso <span aria-hidden="true">↗</span><span class="sr-only">(abre em nova aba)</span></a>
+            </article>
+
+            <article class="resource-card searchable-card" data-category="project" data-search="mecânica estrutural estruturas sólidos materiais análise mit">
+              <div class="resource-topline"><span class="resource-icon" aria-hidden="true">03</span><span class="tag">Estruturas</span></div>
+              <h3>Mecânica estrutural</h3>
+              <p>Estabilidade, deformação, energia e comportamento de estruturas aplicados à engenharia.</p>
+              <div class="resource-meta"><span>MIT OpenCourseWare</span><span>Graduação</span></div>
+              <a class="card-link" href="https://ocw.mit.edu/courses/2-080j-structural-mechanics-fall-2013/" target="_blank" rel="noopener noreferrer">Acessar recurso <span aria-hidden="true">↗</span><span class="sr-only">(abre em nova aba)</span></a>
+            </article>
+
+            <article class="resource-card searchable-card" data-category="course" data-search="física forças movimento energia mecânica khan academy fundamentos">
+              <div class="resource-topline"><span class="resource-icon" aria-hidden="true">04</span><span class="tag">Fundamentos</span></div>
+              <h3>Física: movimento, forças e energia</h3>
+              <p>Aulas e exercícios para reforçar conceitos essenciais usados na Engenharia Mecânica.</p>
+              <div class="resource-meta"><span>Khan Academy</span><span>Gratuito</span></div>
+              <a class="card-link" href="https://www.khanacademy.org/science/physics" target="_blank" rel="noopener noreferrer">Acessar recurso <span aria-hidden="true">↗</span><span class="sr-only">(abre em nova aba)</span></a>
+            </article>
+
+            <article class="resource-card searchable-card" data-category="cad" data-search="cad modelagem 3d modelos biblioteca peças grabcad projeto">
+              <div class="resource-topline"><span class="resource-icon" aria-hidden="true">05</span><span class="tag">Biblioteca CAD</span></div>
+              <h3>Modelos CAD para referência</h3>
+              <p>Modelos tridimensionais compartilhados para estudo, inspiração e prototipagem.</p>
+              <div class="resource-meta"><span>GrabCAD Library</span><span>Modelos 3D</span></div>
+              <a class="card-link" href="https://grabcad.com/library" target="_blank" rel="noopener noreferrer">Acessar recurso <span aria-hidden="true">↗</span><span class="sr-only">(abre em nova aba)</span></a>
+            </article>
+
+            <article class="resource-card searchable-card" data-category="reference" data-search="cálculos tabelas unidades materiais fluidos engenharia toolbox ferramenta">
+              <div class="resource-topline"><span class="resource-icon" aria-hidden="true">06</span><span class="tag">Referência</span></div>
+              <h3>Tabelas e cálculos de engenharia</h3>
+              <p>Propriedades de materiais, conversões, fórmulas e referências para cálculos técnicos.</p>
+              <div class="resource-meta"><span>Engineering ToolBox</span><span>Consulta rápida</span></div>
+              <a class="card-link" href="https://www.engineeringtoolbox.com/" target="_blank" rel="noopener noreferrer">Acessar recurso <span aria-hidden="true">↗</span><span class="sr-only">(abre em nova aba)</span></a>
+            </article>
+          </div>
+
+          <div class="empty-state" id="empty-state" hidden>
+            <span aria-hidden="true">∅</span><h3>Nenhum recurso encontrado</h3>
+            <p>Tente uma busca mais ampla ou selecione outra categoria.</p>
+            <button class="button button-secondary" id="empty-clear" type="button">Limpar filtros</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div data-include="partials/footer.html"></div>
+  </body>
+</html>

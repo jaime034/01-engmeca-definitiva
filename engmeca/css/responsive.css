@@ -1,0 +1,240 @@
+@media (max-width: 64rem) {
+  .resource-grid,
+  .course-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .course-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .course-card:last-child {
+    display: grid;
+    grid-template-columns: minmax(16rem, 0.8fr) 1fr;
+  }
+
+  .course-card:last-child .course-image {
+    height: 100%;
+    min-height: 17rem;
+  }
+
+  .tools-layout,
+  .about-card {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-copy {
+    max-width: 42rem;
+  }
+
+  .about-values {
+    max-width: 42rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  :root {
+    --header-height: 4.5rem;
+  }
+
+  body.menu-open::after {
+    position: fixed;
+    inset: var(--header-height) 0 0;
+    z-index: 900;
+    background: rgba(2, 8, 18, 0.52);
+    content: "";
+    backdrop-filter: blur(3px);
+  }
+
+  .header-inner {
+    gap: 1rem;
+  }
+
+  .site-nav {
+    position: absolute;
+    top: calc(100% + 0.55rem);
+    right: 1.25rem;
+    left: 1.25rem;
+    z-index: 1000;
+    margin-left: 0;
+    padding: 0.75rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-0.6rem);
+    visibility: hidden;
+    transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+  }
+
+  .site-nav.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    visibility: visible;
+  }
+
+  .site-nav ul {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .site-nav a {
+    padding: 0.82rem 0.9rem;
+  }
+
+  .header-actions {
+    margin-left: auto;
+  }
+
+  .menu-toggle {
+    display: grid;
+  }
+
+  .menu-line {
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: opacity var(--transition), transform var(--transition);
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-line-top {
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-line-middle {
+    opacity: 0;
+  }
+
+  .menu-toggle[aria-expanded="true"] .menu-line-bottom {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+
+  .section-heading-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .section-heading-row > p {
+    max-width: 38rem;
+  }
+
+  .hero {
+    background-image: linear-gradient(90deg, rgba(3, 11, 23, 0.96), rgba(3, 12, 25, 0.72)),
+      url("../image/possivel-logo2.jpg");
+    background-position: 45% center;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 40rem) {
+  .container {
+    width: min(calc(100% - 1.5rem), var(--container));
+  }
+
+  .section {
+    padding-block: 4rem;
+  }
+
+  .brand-copy > span {
+    display: none;
+  }
+
+  .hero,
+  .hero-inner {
+    min-height: calc(100svh - var(--header-height));
+  }
+
+  .hero h1 {
+    font-size: clamp(2.55rem, 13vw, 4rem);
+  }
+
+  .hero-actions,
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .hero-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-highlights li {
+    padding: 0.85rem 0;
+  }
+
+  .hero-highlights li + li {
+    padding-left: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 0;
+  }
+
+  .resource-grid,
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card:last-child {
+    display: block;
+    grid-column: auto;
+  }
+
+  .course-card:last-child .course-image {
+    height: 14rem;
+    min-height: 0;
+  }
+
+  .resource-card {
+    min-height: auto;
+  }
+
+  .search-panel {
+    min-height: 3.75rem;
+    padding-left: 0.9rem;
+  }
+
+  .search-clear {
+    padding-inline: 0.55rem;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 3rem;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
